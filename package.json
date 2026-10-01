@@ -1,0 +1,29 @@
+{
+  "name": "ruber-visual-mograph",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Ruber Visual - hyper dynamic motion graphic built with Remotion",
+  "scripts": {
+    "dev": "remotion studio",
+    "render": "remotion render RuberVisual out/ruber-visual-16x9.mp4 --crf=20 && bash scripts/master.sh out/ruber-visual-16x9.mp4 out/ruber-visual-16x9-master.mp4",
+    "render:vertical": "remotion render RuberVisualVertical out/ruber-visual-9x16.mp4 --crf=20 && bash scripts/master.sh out/ruber-visual-9x16.mp4 out/ruber-visual-9x16-master.mp4",
+    "still": "remotion still RuberVisual out/still.png --frame=60",
+    "sfx": "python3 scripts/gen_sfx.py",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.532",
+    "@remotion/fonts": "4.0.532",
+    "@remotion/noise": "4.0.532",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "remotion": "4.0.532"
+  },
+  "devDependencies": {
+    "@fontsource/instrument-serif": "^5.2.5",
+    "@fontsource/jetbrains-mono": "^5.2.5",
+    "@fontsource/plus-jakarta-sans": "^5.2.5",
+    "@types/react": "19.1.0",
+    "typescript": "5.8.3"
+  }
+}
