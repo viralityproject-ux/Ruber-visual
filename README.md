@@ -18,7 +18,8 @@ npm run render:vertical  # out/ruber-visual-9x16.mp4  + out/ruber-visual-9x16-ma
 ```
 
 File `*-master.mp4` adalah versi final untuk upload: audio sudah di-limit dan dinormalisasi
-ke -14 LUFS / -1 dBTP lewat `scripts/master.sh` (butuh ffmpeg). Video stream tidak di-encode ulang.
+ke -14 LUFS / -1 dBTP lewat `scripts/master.mjs` (butuh ffmpeg di PATH; kalau tidak ada, step ini dilewati
+dan file tanpa `-master` tetap bisa dipakai). Video stream tidak di-encode ulang.
 
 Audio:
 - `public/audio/voice-over.mp3` — VO asli
@@ -49,7 +50,7 @@ public/
   audio/ fonts/ photos/ videos/ sfx/ textures/
 scripts/
   gen_sfx.py          generator SFX (whoosh, impact, click, clap, dll) — semua sintetis
-  master.sh           mastering audio MP4 akhir (-14 LUFS)
+  master.mjs          mastering audio MP4 akhir (-14 LUFS), jalan di Mac/Windows/Linux
   stills.mjs          render frame QA: node scripts/stills.mjs RuberVisual 12.5 40.2
   sheet.py            gabungkan still QA jadi satu contact sheet
 ```
