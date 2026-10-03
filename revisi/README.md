@@ -41,3 +41,8 @@ Nomor file = urutan kiriman. "Target" = detik yang disebut di chat.
 | 34 | 4 talent tertawa, bg abu (varian 08) | landscape | cadangan | belum |
 | 35 | 3 talent varsity diskusi, "Great Ideas" (varian 16) | landscape | cadangan | belum |
 | 36 | 3 talent varsity koridor biru, vertikal (varian 01) | portrait | cadangan | belum |
+| 37 | BTS meja kerja film "TITIP": storyboard, clapper, editing, naskah (vertikal) | portrait | cadangan | belum |
+| 38 | 2 MC panggung ParagonCorp P41, confetti (varian 02) | landscape | cadangan | belum |
+| 39 | Wanita berhijab blazer hitam, bg abu (varian 15) | portrait | cadangan | belum |
+| 40 | Cowok jaket suede di perpustakaan, landscape (varian 04) | landscape | cadangan | belum |
+| 41 | 3 talent varsity, layar "Empowered to Shape the Future" | landscape | cadangan | belum |
