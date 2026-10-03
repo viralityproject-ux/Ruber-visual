@@ -213,8 +213,8 @@ export const A02Logo: React.FC = () => {
   // ---------------- dive into the card (bridge to Act 3) ----------------
   const dive = prog(t, 21.55, 0.45, ease.inCubic);
   const zoom = Math.exp(Math.log(34) * dive);
-  const fx = mix(FOCAL[0], 960, ease.inOutCubic(prog(t, 21.5, 0.5)));
-  const fy = mix(FOCAL[1], 540, ease.inOutCubic(prog(t, 21.5, 0.5)));
+  const fx = mix(FOCAL[0], 960, prog(t, 21.5, 0.5, ease.inOutCubic));
+  const fy = mix(FOCAL[1], 540, prog(t, 21.5, 0.5, ease.inOutCubic));
   const world = `translate(${fx}px, ${fy}px) scale(${zoom}) translate(${-FOCAL[0]}px, ${-FOCAL[1]}px)`;
 
   // ---------------- sketch reveal masks ----------------
