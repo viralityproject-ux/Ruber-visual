@@ -1,51 +1,51 @@
 # Revisi — aset masuk
 
-Foto revisi dari bang Dep, disimpan apa adanya (belum diproses).
+Foto revisi dari bang Dep. Kolom Status = posisi di video V2 (detik dalam VO baru).
 Nomor file = urutan kiriman. "Target" = detik yang disebut di chat.
 
 | No | Isi | Orientasi | Target | Status |
 |----|-----|-----------|--------|--------|
-| 01 | 3 talent varsity jacket, koridor biru | landscape | 0:25 kolase | terpasang (collage-varsity-hallway) |
-| 02 | 2 MC di panggung event ParagonCorp P41 | landscape | 0:25 kolase | terpasang (collage-event-stage) |
-| 03 | Cowok pegang parfum Untitled Humans (indoor) | landscape | 0:25 kolase | terpasang (collage-perfume-product) |
-| 04 | Cowok jaket suede di perpustakaan | portrait | 0:25 kolase | terpasang (collage-library-portrait) |
-| 05 | Cowok kacamata jaket krem, bg biru muda | portrait | 0:25 kolase | terpasang (collage-studio-blue-portrait) |
-| 06 | Cewek ponytail terbang, lighting merah-biru | portrait | 0:25 kolase | terpasang (collage-ponytail-studio) |
-| 07 | Pria jas hitam tangan dilipat, bg abu | portrait | 0:25 kolase | terpasang (collage-corporate-portrait) |
-| 08 | 4 talent tertawa, bg biru muda | landscape | 0:25 kolase | terpasang (collage-group-blue) |
-| 09 | BTS kru syuting talent di kasur (telepon) | landscape | 0:47 | terpasang (bts-shoot-bedroom-crew) |
-| 10 | BTS kamera + talent pegang laptop | landscape | 0:47 | terpasang (bts-shoot-bedroom-camera) |
-| 11 | BTS set kantor, kru + 2 talent | landscape | 0:47 | terpasang (bts-set-office-crew) |
-| 12 | BTS kru syuting talent di set kamar (wide) | landscape | 0:47 | belum |
-| 13 | Grup 7 talent tertawa, bg abu | landscape | 0:36 | belum |
-| 14 | 3 talent lihat tablet, rak produk oranye | landscape | 0:36 | belum |
-| 15 | Wanita berhijab blazer navy, bg biru | portrait | 0:36 | belum |
-| 16 | 3 talent varsity, ruang meeting "Great Ideas" (duduk) | landscape | 0:36 | belum |
-| 17 | Cowok pegang parfum Untitled Humans (outdoor) | landscape | 0:36 | belum |
-| 18 | BTS kru arahkan kamera di set kamar | landscape | 0:36 | belum |
-| 19 | Poster short movie "TITIP" (YBM BRILiaN) | portrait | 0:36 | belum |
-| 20 | 7 pria berjas di gudang, lighting biru | landscape | 0:36 | belum |
-| 21 | BTS kru + talent telepon di kasur (angle atas, mirip 09) | landscape | 0:36 | belum |
-| 22 | Cowok kacamata tunjuk printout foto, fisheye | landscape | 1:13 | belum |
-| 23 | Talent piyama biru bangun tidur | landscape | 1:13 | belum |
-| 24 | Talent piyama panik lihat HP | landscape | 1:13 | belum |
-| 25 | Talent blazer navy telepon di kantor | landscape | 1:13 | belum |
-| 26 | Wanita berhijab senyum ke talent blazer navy | landscape | 1:13 | belum |
-| 27 | Talent blazer navy main HP di meja kantor | landscape | 1:13 | belum |
-| 28 | Talent menangis lihat HP, cahaya biru | landscape | 1:13 | belum |
-| 29 | Talent telepon di kasur + tisu (still film) | landscape | 1:13 | belum |
-| 30 | Cewek ponytail (identik dengan 06) | portrait | 1:13 | belum |
-| 31 | BTS diagram lighting beranotasi | ~persegi | 1:13 | belum |
-| 32 | Cowok kacamata jaket krem, bg abu (varian 05) | portrait | cadangan | belum |
-| 33 | Cowok varsity + ransel + buku, bg abu | portrait | cadangan | belum |
-| 34 | 4 talent tertawa, bg abu (varian 08) | landscape | cadangan | belum |
-| 35 | 3 talent varsity diskusi, "Great Ideas" (varian 16) | landscape | cadangan | belum |
-| 36 | 3 talent varsity koridor biru, vertikal (varian 01) | portrait | cadangan | belum |
-| 37 | BTS meja kerja film "TITIP": storyboard, clapper, editing, naskah (vertikal) | portrait | cadangan | belum |
-| 38 | 2 MC panggung ParagonCorp P41, confetti (varian 02) | landscape | cadangan | belum |
-| 39 | Wanita berhijab blazer hitam, bg abu (varian 15) | portrait | cadangan | belum |
-| 40 | Cowok jaket suede di perpustakaan, landscape (varian 04) | landscape | cadangan | belum |
-| 41 | 3 talent varsity, layar "Empowered to Shape the Future" | landscape | cadangan | belum |
+| 01 | 3 talent varsity jacket, koridor biru | landscape | 0:25 kolase | V2: Act 3 dinding konten (0:30) |
+| 02 | 2 MC di panggung event ParagonCorp P41 | landscape | 0:25 kolase | V2: Act 3 Corporate Documentation (0:25) |
+| 03 | Cowok pegang parfum Untitled Humans (indoor) | landscape | 0:25 kolase | V2: Act 3 Product Photography (0:29) |
+| 04 | Cowok jaket suede di perpustakaan | portrait | 0:25 kolase | V2: Act 3 Photoshoot (0:28) |
+| 05 | Cowok kacamata jaket krem, bg biru muda | portrait | 0:25 kolase | V2: Act 3 Photoshoot (0:28) |
+| 06 | Cewek ponytail terbang, lighting merah-biru | portrait | 0:25 kolase | V2: Act 3 Photoshoot (0:28) |
+| 07 | Pria jas hitam tangan dilipat, bg abu | portrait | 0:25 kolase | V2: Act 3 Photoshoot (0:28) |
+| 08 | 4 talent tertawa, bg biru muda | landscape | 0:25 kolase | V2: Act 3 dinding konten (0:31) |
+| 09 | BTS kru syuting talent di kasur (telepon) | landscape | 0:47 | V2: Act 4–5 polaroid (0:46) |
+| 10 | BTS kamera + talent pegang laptop | landscape | 0:47 | V2: Act 5 papan BTS (0:47) |
+| 11 | BTS set kantor, kru + 2 talent | landscape | 0:47 | V2: Act 5 papan BTS (0:47) |
+| 12 | BTS kru syuting talent di set kamar (wide) | landscape | 0:47 | V2: Act 5 papan BTS (0:47) |
+| 13 | Grup 7 talent tertawa, bg abu | landscape | 0:36 | V2: Act 4 perjalanan (0:35) |
+| 14 | 3 talent lihat tablet, rak produk oranye | landscape | 0:36 | V2: Act 4 perjalanan (0:36) |
+| 15 | Wanita berhijab blazer navy, bg biru | portrait | 0:36 | V2: Act 4 perjalanan (0:35) |
+| 16 | 3 talent varsity, ruang meeting "Great Ideas" (duduk) | landscape | 0:36 | V2: Act 4 perjalanan (0:37) |
+| 17 | Cowok pegang parfum Untitled Humans (outdoor) | landscape | 0:36 | V2: Act 4 perjalanan (0:37) |
+| 18 | BTS kru arahkan kamera di set kamar | landscape | 0:36 | V2: Act 4 kartu "tantangan" (0:44) + Act 8 "koordinasi" (1:21) |
+| 19 | Poster short movie "TITIP" (YBM BRILiaN) | portrait | 0:36 | V2: Act 4 perjalanan (0:36) |
+| 20 | 7 pria berjas di gudang, lighting biru | landscape | 0:36 | V2: Act 4 perjalanan (0:37) |
+| 21 | BTS kru + talent telepon di kasur (angle atas, mirip 09) | landscape | 0:36 | V2: Act 4 kartu "tantangan" (0:44) |
+| 22 | Cowok kacamata tunjuk printout foto, fisheye | landscape | 1:13 | V2: Act 8 "pemahaman" (1:23) |
+| 23 | Talent piyama biru bangun tidur | landscape | 1:13 | V2: Act 8 "terburu-buru" (1:16) |
+| 24 | Talent piyama panik lihat HP | landscape | 1:13 | V2: Act 8 "terburu-buru" (1:16) |
+| 25 | Talent blazer navy telepon di kantor | landscape | 1:13 | V2: Act 8 "terburu-buru" (1:16) |
+| 26 | Wanita berhijab senyum ke talent blazer navy | landscape | 1:13 | V2: Act 8c "kualitas" (1:31) |
+| 27 | Talent blazer navy main HP di meja kantor | landscape | 1:13 | V2: Act 8c "kualitas" (1:31) |
+| 28 | Talent menangis lihat HP, cahaya biru | landscape | 1:13 | V2: Act 8 "terburu-buru" (1:16) |
+| 29 | Talent telepon di kasur + tisu (still film) | landscape | 1:13 | V2: Act 8c "detail" + transisi piksel (1:32) |
+| 30 | Cewek ponytail (identik dengan 06) | portrait | 1:13 | V2: dilewati (duplikat 06) |
+| 31 | BTS diagram lighting beranotasi | ~persegi | 1:13 | V2: Act 8 "kesiapan" (1:20) |
+| 32 | Cowok kacamata jaket krem, bg abu (varian 05) | portrait | cadangan | V2: Act 2 sketsa → foto (0:17) |
+| 33 | Cowok varsity + ransel + buku, bg abu | portrait | cadangan | V2: Act 3 dinding konten (0:31) |
+| 34 | 4 talent tertawa, bg abu (varian 08) | landscape | cadangan | V2: Act 3 dinding konten (0:31) |
+| 35 | 3 talent varsity diskusi, "Great Ideas" (varian 16) | landscape | cadangan | V2: Act 4 kartu "kebutuhan" (0:42) |
+| 36 | 3 talent varsity koridor biru, vertikal (varian 01) | portrait | cadangan | V2: Act 3 Reels + dinding (0:27) |
+| 37 | BTS meja kerja film "TITIP": storyboard, clapper, editing, naskah (vertikal) | portrait | cadangan | V2: Act 8 "pengalaman" (1:22) |
+| 38 | 2 MC panggung ParagonCorp P41, confetti (varian 02) | landscape | cadangan | V2: Act 4 kartu "karakter" (0:43) + Act 10 "visual" (1:52) |
+| 39 | Wanita berhijab blazer hitam, bg abu (varian 15) | portrait | cadangan | V2: Act 4 kartu "karakter" (0:43) |
+| 40 | Cowok jaket suede di perpustakaan, landscape (varian 04) | landscape | cadangan | V2: Act 8c "kualitas" (1:31) |
+| 41 | 3 talent varsity, layar "Empowered to Shape the Future" | landscape | cadangan | V2: Act 4 kartu "kebutuhan" (0:42) + Act 10 pesan (1:55) |
 
 ## Logo klien
 
@@ -54,11 +54,11 @@ dibuat dengan `scripts/key_logo.py`.
 
 | No | Klien | File | Status |
 |----|-------|------|--------|
-| 42 | Novo Club | logos/novo-club.png | tersimpan |
-| 43 | MIT REAP | logos/mit-reap.png | tersimpan |
-| 44 | ParagonCorp | logos/paragon-corp.png | tersimpan (teks hitam, perlu tile terang / versi putih di bg gelap) |
-| 45 | YBM BRILiaN | logos/ybm-brilian.png | tersimpan |
-| 46 | Indika Foundation | logos/indika-foundation.png | tersimpan |
+| 42 | Novo Club | logos/novo-club.png | V2: Act 4 marquee logo (0:38–0:42) |
+| 43 | MIT REAP | logos/mit-reap.png | V2: Act 4 marquee logo (0:38–0:42) |
+| 44 | ParagonCorp | logos/paragon-corp.png | V2: Act 4 marquee logo (0:38–0:42) |
+| 45 | YBM BRILiaN | logos/ybm-brilian.png | V2: Act 4 marquee logo (0:38–0:42) |
+| 46 | Indika Foundation | logos/indika-foundation.png | V2: Act 4 marquee logo (0:38–0:42) |
 
 Belum masuk file-nya (terkirim di tengah proses, perlu dikirim ulang):
 Wardah Inspiring Teacher, Women's Space, Kahf, BRAVE, Points of You,
