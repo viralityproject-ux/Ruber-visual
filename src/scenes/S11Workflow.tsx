@@ -3,7 +3,7 @@ import {AbsoluteFill} from 'remotion';
 import {C, F, GRAD} from '../theme';
 import {InkBg} from '../components/Backgrounds';
 import {Label, Typed, W, at} from '../components/Text';
-import {At, Bar, CheckBadge, Media, Pill} from '../components/UI';
+import {Bar, CheckBadge, Media, Pill} from '../components/UI';
 import {Icon} from '../components/Icons';
 import {useLayout, useT} from '../lib/scene';
 import {bump, clamp01, ease, mix, prog, spr} from '../lib/anim';
@@ -15,14 +15,7 @@ const STEPS = [
   {title: 'Produksi', verb: 'berjalan', noun: 'produksi', verbCue: 'berjalan', icon: 'camera'},
 ];
 
-const PEOPLE = [
-  ['photos/street-boy-bag.jpg', '50% 25%', 'Director'],
-  ['photos/fashion-girl-pink.jpg', '50% 30%', 'Producer'],
-  ['photos/fashion-man-sneakers.jpg', '45% 25%', 'DOP'],
-  ['photos/fashion-hijab-glasses.jpg', '50% 30%', 'Stylist'],
-  ['photos/street-girl-portrait.jpg', '50% 25%', 'Gaffer'],
-  ['photos/fashion-hijab-cap.jpg', '50% 28%', 'Editor'],
-];
+const CREW = ['DIRECTOR', 'DOP', 'GAFFER', 'SOUND'];
 
 const Field: React.FC<{k: string; v: string; t0: number}> = ({k, v, t0}) => {
   const {u} = useLayout();
@@ -108,23 +101,40 @@ const StepBody: React.FC<{i: number; t0: number}> = ({i, t0}) => {
     );
   }
   if (i === 2) {
+    const zoom = mix(1.14, 1.02, prog(t, t0 - 0.4, 2.4, ease.outCubic));
     return (
-      <div style={{marginTop: 30 * u, display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 22 * u}}>
-        {PEOPLE.map(([src, pos, role], j) => {
-          const p = prog(t, t0 + j * 0.08, 0.45, ease.outBackStrong);
-          const ok = t > t0 + 0.6 + j * 0.1;
-          return (
-            <div key={src} style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 10 * u, transform: `scale(${p})`}}>
-              <div style={{position: 'relative'}}>
-                <div style={{width: 120 * u, height: 120 * u, borderRadius: '50%', overflow: 'hidden', border: `${4 * u}px solid ${ok ? C.violetLight : 'rgba(255,255,255,0.2)'}`}}>
-                  <Media src={src} pos={pos} />
-                </div>
-                {ok ? <CheckBadge t0={t0 + 0.6 + j * 0.1} size={38} style={{position: 'absolute', right: -6 * u, bottom: -4 * u}} /> : null}
+      <div style={{marginTop: 26 * u}}>
+        <div style={{position: 'relative', height: 300 * u, borderRadius: 22 * u, overflow: 'hidden', background: '#000'}}>
+          <Media src="photos/bts-set-office-crew.jpg" pos="60% 55%" zoom={zoom} />
+          <div style={{position: 'absolute', left: 18 * u, top: 16 * u, padding: `${6 * u}px ${14 * u}px`, borderRadius: 999, background: 'rgba(7,7,15,0.55)', fontFamily: F.mono, fontWeight: 700, fontSize: 20 * u, color: '#fff', letterSpacing: '0.08em'}}>
+            SET · STANDBY
+          </div>
+        </div>
+        <div style={{display: 'flex', gap: 12 * u, marginTop: 20 * u, flexWrap: 'wrap'}}>
+          {CREW.map((role, j) => {
+            const tj = t0 + 0.35 + j * 0.12;
+            const p = prog(t, tj, 0.4, ease.outBackStrong);
+            return (
+              <div
+                key={role}
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: 8 * u,
+                  padding: `${8 * u}px ${14 * u}px ${8 * u}px ${8 * u}px`,
+                  borderRadius: 999,
+                  background: 'rgba(255,255,255,0.08)',
+                  border: `${1.5 * u}px solid rgba(179,145,255,0.35)`,
+                  transform: `scale(${p})`,
+                  opacity: Math.min(1, p * 2),
+                }}
+              >
+                <CheckBadge t0={tj + 0.1} size={30} />
+                <span style={{fontFamily: F.mono, fontWeight: 700, fontSize: 19 * u, color: '#fff', letterSpacing: '0.06em'}}>{role}</span>
               </div>
-              <span style={{fontFamily: F.mono, fontSize: 20 * u, color: 'rgba(255,255,255,0.7)', letterSpacing: '0.06em'}}>{role}</span>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
     );
   }
@@ -133,9 +143,10 @@ const StepBody: React.FC<{i: number; t0: number}> = ({i, t0}) => {
   return (
     <div style={{marginTop: 26 * u}}>
       <div style={{position: 'relative', height: 330 * u, borderRadius: 22 * u, overflow: 'hidden', background: '#000'}}>
-        <At t={t0 - 0.3}>
-          <Media src="videos/reel-hallway-bts.mp4" trim={1} pos="50% 40%" />
-        </At>
+        <Media src="photos/bts-shoot-bedroom-crew.jpg" pos="45% 40%" zoom={mix(1.12, 1.0, prog(t, t0 - 0.3, 1.4, ease.outCubic))} />
+        <div style={{position: 'absolute', inset: 0, opacity: prog(t, t0 + 0.75, 0.25, ease.inOutCubic)}}>
+          <Media src="photos/bts-shoot-bedroom-camera.jpg" pos="55% 45%" zoom={mix(1.0, 1.08, prog(t, t0 + 0.75, 1.6, ease.linear))} />
+        </div>
         <div style={{position: 'absolute', left: 18 * u, top: 16 * u, display: 'flex', alignItems: 'center', gap: 10 * u, fontFamily: F.mono, fontWeight: 700, fontSize: 22 * u, color: '#fff'}}>
           <span style={{width: 16 * u, height: 16 * u, borderRadius: '50%', background: C.violetLight, opacity: blink ? 1 : 0.3}} />
           REC
