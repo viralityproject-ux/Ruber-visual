@@ -8,7 +8,7 @@ per kata (dari SRT + stem vokal) dan per ketukan musik (beat grid).
   putih `#F4F5F9` dan hitam `#070816`
 - Font: Plus Jakarta Sans (display), Instrument Serif Italic (aksen), JetBrains Mono (label UI)
 - Gaya SaaS: window aplikasi, kursor, chip, dashboard, kartu
-- Kata kunci besar + subtitle karaoke di bawah (outro: logo + tagline saja)
+- Kata kunci besar di layar, tanpa subtitle (outro: logo + tagline saja)
 - Semua perpindahan antar bagian **seamless**: tiap act diakhiri dengan warna rata / elemen yang sama
   dengan frame pertama act berikutnya (dicek frame per frame)
 - Semua foto revisi (01–41, kecuali 30 yang duplikat 06), semua logo klien, 15 akun sosmed + 135 post dipakai
@@ -26,24 +26,28 @@ npm run sfx      # generate ulang stem SFX (public/audio/sfx-v2.wav)
 `*-master.mp4` adalah versi final untuk upload: audio di-limit dan dinormalisasi ke -14 LUFS / -1 dBTP
 lewat `scripts/master.mjs` (butuh ffmpeg). Video stream tidak di-encode ulang.
 
-Props (opsional): `--props='{"sfx":false}'`, `{"subtitles":false}`, `{"music":false}`.
+Props (opsional): `--props='{"sfx":false}'`, `{"music":false}`.
+
+Tagline penutup memakai take VO terpisah (`revisi/inbox/audio/vo-ending-v3.mp3`) yang ditaruh di 2:10;
+`python3 scripts/swap_ending.py` membuang take lama dari mix lalu menulis ulang `public/audio/soundtrack-v2.mp3`.
 
 ## Struktur
 
 ```
 src/
   Root.tsx              komposisi RuberVisual (1920×1080, 30 fps)
-  Main.tsx              timeline: 12 act berurutan + subtitle + audio
+  Main.tsx              timeline: 12 act berurutan + audio
   acts/A01..A12         satu file per bagian VO
   data/vo2.ts           timestamp per kata (VO v2)
   data/beats.ts         beat grid musik
   data/mosaic.ts        warna piksel untuk transisi foto → titik (Act 8c → 9)
-  components/           RuberLogo (logo resmi, vektor), Subtitles, Cover (transisi), Illos, UI, Text, Backgrounds
+  components/           RuberLogo (logo resmi, vektor), Cover (transisi), Illos, UI, Text, Backgrounds
   lib/                  scene/useT, anim (easing), kf (keyframe), beat, sketch (garis tangan), dots
 public/
   audio/ photos/ videos/ logos/ sosmed/ sketch/ fonts/ textures/
 scripts/
   sfx_v2.py             SFX prosedural + cue sheet → stem
+  swap_ending.py        ganti take VO tagline penutup di soundtrack
   sketchify.py          foto → layer sketsa garis (Act 2)
   mosaic.py             foto → grid warna (Act 8c)
   master.mjs            mastering audio MP4 akhir
@@ -66,7 +70,7 @@ scripts/
 | 09 | 95.3 | ranah digital … 15+ media & proxy … satu miliar views | Grid titik membungkus jadi globe, 15 akun mengorbit + follower, dinding 135 post → orb, counter 1.000.000.000+ | mata "views" membuka jadi kertas |
 | 10 | 108.85 | visual bukan hanya … terlihat, tetapi pesan diterima, diingat, relevan | "visual" raksasa berisi foto, mata + "terlihat" dicoret, chat "Dibaca", kartu diterima/diingat/relevan + audience | runtuh ke titik → hitam |
 | 11 | 121.4 | Dari sebuah ide, menjadi proses, diwujudkan menjadi karya … audience-nya | Bohlam menyala → roda gigi → HP publish reel → cincin audience | satu titik cahaya → kertas |
-| 12 | 129.65 | Ruber Visual. Cepat, tepat, akurat. | Logo dibangun dari satu titik + tagline | — |
+| 12 | 129.65 | Ruber Visual. Built to make every story exceptional. | Logo dibangun dari satu titik + tagline | — |
 
 ## Mengubah timing
 
