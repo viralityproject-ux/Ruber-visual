@@ -1,8 +1,8 @@
 import React from 'react';
-import {C, F, GRAD} from '../theme';
+import {C, F, GRAD, GRAD_LIGHT} from '../theme';
 import {useLayout, useT} from '../lib/scene';
 import {ease, mix, popIn, popOut, prog} from '../lib/anim';
-import {VO} from '../data/voiceover';
+import {VO2 as VO} from '../data/vo2';
 
 const norm = (s: string) => s.toLowerCase().replace(/[^a-z0-9]/g, '');
 
@@ -24,7 +24,7 @@ export const lookStyle = (look: WordLook, dark: boolean): React.CSSProperties =>
   switch (look) {
     case 'grad':
       return {
-        backgroundImage: GRAD,
+        backgroundImage: dark ? GRAD_LIGHT : GRAD,
         WebkitBackgroundClip: 'text',
         backgroundClip: 'text',
         color: 'transparent',
@@ -36,7 +36,7 @@ export const lookStyle = (look: WordLook, dark: boolean): React.CSSProperties =>
         fontStyle: 'italic',
         fontWeight: 400,
         letterSpacing: '-0.01em',
-        backgroundImage: GRAD,
+        backgroundImage: dark ? GRAD_LIGHT : GRAD,
         WebkitBackgroundClip: 'text',
         backgroundClip: 'text',
         color: 'transparent',

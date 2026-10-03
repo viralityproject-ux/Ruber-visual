@@ -161,13 +161,7 @@ const SceneBody: React.FC<{
   const pin = clamp01(lt / enterDur);
   const pout = clamp01((lt - (dur - exitDur)) / exitDur);
   const style = combine(enterStyle(enter, pin), exitStyle(exit, pout));
-  // slow camera push so no frame is ever fully static
-  const push = 1 + 0.03 * (lt / Math.max(1, dur));
-  return (
-    <AbsoluteFill style={{...style, overflow: 'hidden'}}>
-      <AbsoluteFill style={{transform: `scale(${push})`}}>{children}</AbsoluteFill>
-    </AbsoluteFill>
-  );
+  return <AbsoluteFill style={{...style, overflow: 'hidden'}}>{children}</AbsoluteFill>;
 };
 
 /** Directional motion-blur SVG filters referenced by whip transitions (mbx1..5 / mby1..5). */
