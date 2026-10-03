@@ -81,3 +81,8 @@ Semua 2000x889, logo di tengah dengan latar putih (perlu dibuang putihnya sebelu
 | `logos/kahf.webp` | Kahf |
 | `logos/brave.webp` | BRAVE (Building Robust & Agile Value-Driven ERP) |
 | `logos/points-of-you.webp` | Points of You |
+| `logos/ganara-art.webp` | Ganara.art |
+| `logos/vogl-media.webp` | VOGL Media |
+| `logos/pijar.webp` | Pijar |
+| `logos/goto.webp` | GoTo |
+| `logos/pemimpin-id.webp` | Pemimpin.id |
