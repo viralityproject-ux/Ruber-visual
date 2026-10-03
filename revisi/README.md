@@ -99,5 +99,10 @@ Semua 2000x889, logo di tengah dengan latar putih (perlu dibuang putihnya sebelu
 | `sosmed/scoopmedia.webp` | @scoopmedia.id — SCOOP Media | 3,059 | 95K |
 | `sosmed/sehatbugar.webp` | @sehatbugar.idn — Sahabat sehatmu | 1,866 | 176K |
 | `sosmed/semiliarkebaikan.webp` | @semiliarkebaikan — Semiliar Kebaikan | 47 | 199 |
+| `sosmed/teladani.webp` | @teladani.id — Teladani | 16 | 80 |
+| `sosmed/welcomehomesociety.webp` | @welcomehomesociety — Welcome Home Society | 7 | 9 |
+| `sosmed/adadirumah.webp` | @adadirumah.idn — Cerita & Tips Parenting | 19 | 5,871 |
+| `sosmed/asayangtumbuh.png` | @asayangtumbuh — Asa yang Tumbuh | 26 | 1,790 |
+| `sosmed/jalanbalik.webp` | @jalanbalik.co — Teman Hijrah | 91 | 151 |
 
-Total followers 5 akun: ±920K. Total posts: 10.614.
+Total followers 10 akun: ±928K (4 akun besar = 920K). Total posts: 10.773.
