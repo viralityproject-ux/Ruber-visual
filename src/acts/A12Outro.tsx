@@ -1,6 +1,6 @@
 import React from 'react';
 import {AbsoluteFill} from 'remotion';
-import {C, F, GRAD} from '../theme';
+import {C, F} from '../theme';
 import {PaperBg} from '../components/Backgrounds';
 import {RuberLockup, RuberMark, RuberWordmark} from '../components/RuberLogo';
 import {W, at} from '../components/Text';
@@ -14,22 +14,16 @@ const LH = 617 * K;
 const LX = 960 - LW / 2;
 const LY = 455 - LH / 2;
 
-// "Ruber Visual. Cepat, tepat, akurat."
+// "Ruber Visual. Built to make every story exceptional."
 export const A12Outro: React.FC = () => {
   const t = useT();
   const ruber = at(53, 'ruber');
-  const cepat = at(53, 'cepat');
-  const tepat = at(54, 'tepat');
-  const akurat = at(54, 'akurat');
-  const t0 = ruber - 0.08;
+  const exceptional = at(54, 'exceptional');
+  const words = ['built', 'to', 'make', 'every', 'story'].map((w) => ({w: w === 'built' ? 'Built' : w, t: at(54, w)}));
+  const t0 = ruber - 0.33; // the dot appears just before the name is said
   const settle = prog(t, 130.6, 4.2, ease.outCubic);
-  const shine = prog(t, 133.4, 0.7, ease.inOutCubic);
-
-  const word = (text: string, tw: number, look: 'plain' | 'grad' | 'serif') => (
-    <W t={tw} look={look === 'plain' ? 'plain' : look} style={look === 'serif' ? {fontSize: '1.14em'} : undefined}>
-      {text}
-    </W>
-  );
+  const shine = prog(t, 133.75, 0.7, ease.inOutCubic);
+  const swoosh = prog(t, exceptional + 0.45, 0.45, ease.inOutCubic);
 
   return (
     <AbsoluteFill>
@@ -65,12 +59,26 @@ export const A12Outro: React.FC = () => {
           </div>
         ) : null}
         {/* tagline */}
-        <div style={{position: 'absolute', left: 0, right: 0, top: 790, display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 26, fontFamily: F.display, fontWeight: 800, fontSize: 64, letterSpacing: '-0.035em', color: C.ink}}>
-          {word('cepat', cepat, 'plain')}
-          <div style={{width: 14, height: 14, borderRadius: 7, background: GRAD, transform: `scale(${prog(t, tepat - 0.1, 0.35, ease.outBackStrong) * (1 + bump(t, tepat, 0.3) * 0.4)})`}} />
-          {word('tepat', tepat, 'grad')}
-          <div style={{width: 14, height: 14, borderRadius: 7, background: GRAD, transform: `scale(${prog(t, akurat - 0.1, 0.35, ease.outBackStrong) * (1 + bump(t, akurat, 0.3) * 0.4)})`}} />
-          {word('akurat.', akurat, 'serif')}
+        <div style={{position: 'absolute', left: 0, right: 0, top: 770, display: 'flex', justifyContent: 'center', alignItems: 'baseline', fontFamily: F.display, fontWeight: 800, fontSize: 66, letterSpacing: '-0.035em', color: C.ink, whiteSpace: 'nowrap'}}>
+          {words.map(({w, t: tw}) => (
+            <W key={w} t={tw}>
+              {w}{' '}
+            </W>
+          ))}
+          <span style={{position: 'relative', display: 'inline-block', marginLeft: '0.18em', transform: `scale(${1 + bump(t, exceptional + 0.1, 0.4) * 0.05})`}}>
+            <W t={exceptional} look="serif" style={{fontSize: '1.3em'}}>
+              exceptional.
+            </W>
+            <svg width={400} height={30} viewBox="0 0 420 30" style={{position: 'absolute', left: 6, bottom: -26, overflow: 'visible'}}>
+              <defs>
+                <linearGradient id="tagSwoosh" x1="0" x2="1">
+                  <stop offset="0" stopColor={C.blueMid} />
+                  <stop offset="1" stopColor={C.violetMid} />
+                </linearGradient>
+              </defs>
+              <path d="M4 20 C 120 6, 280 4, 414 14" fill="none" stroke="url(#tagSwoosh)" strokeWidth={7} strokeLinecap="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - swoosh} />
+            </svg>
+          </span>
         </div>
       </AbsoluteFill>
     </AbsoluteFill>

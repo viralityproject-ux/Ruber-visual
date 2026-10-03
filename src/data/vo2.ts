@@ -1,4 +1,5 @@
 // Generated: VO v2 (revisi/inbox/audio/music.mp3 + vo-v2.srt). Times in seconds.
+// The closing tagline (last two lines) is the replacement take revisi/inbox/audio/vo-ending-v3.mp3 laid at 2:10.
 export type Word = {w: string; s: number; e: number};
 export type Line = {start: number; end: number; text: string; words: Word[]};
 
@@ -56,6 +57,6 @@ export const VO2: Line[] = [
   {start: 123.20, end: 124.47, text: "menjadi sebuah proses,", words: [{w: "menjadi", s: 123.20, e: 123.70}, {w: "sebuah", s: 123.70, e: 124.03}, {w: "proses,", s: 124.03, e: 124.47}]},
   {start: 125.33, end: 128.23, text: "kemudian diwujudkan menjadi karya yang siap bertemu", words: [{w: "kemudian", s: 125.33, e: 125.81}, {w: "diwujudkan", s: 125.81, e: 126.52}, {w: "menjadi", s: 126.52, e: 127.07}, {w: "karya", s: 127.07, e: 127.48}, {w: "yang", s: 127.48, e: 127.55}, {w: "siap", s: 127.55, e: 127.85}, {w: "bertemu", s: 127.85, e: 128.23}]},
   {start: 128.40, end: 129.47, text: "dengan audience-nya.", words: [{w: "dengan", s: 128.40, e: 128.78}, {w: "audience-nya.", s: 128.78, e: 129.47}]},
-  {start: 129.73, end: 131.50, text: "Ruber Visual. Cepat,", words: [{w: "Ruber", s: 129.77, e: 130.22}, {w: "Visual.", s: 130.22, e: 130.72}, {w: "Cepat,", s: 130.72, e: 131.50}]},
-  {start: 132.07, end: 133.40, text: "tepat, akurat.", words: [{w: "tepat,", s: 132.07, e: 132.86}, {w: "akurat.", s: 132.86, e: 133.35}]},
+  {start: 130.08, end: 130.96, text: "Ruber Visual.", words: [{w: "Ruber", s: 130.08, e: 130.50}, {w: "Visual.", s: 130.52, e: 130.96}]},
+  {start: 131.20, end: 133.72, text: "Built to make every story exceptional.", words: [{w: "Built", s: 131.20, e: 131.48}, {w: "to", s: 131.52, e: 131.62}, {w: "make", s: 131.64, e: 131.90}, {w: "every", s: 132.02, e: 132.48}, {w: "story", s: 132.52, e: 132.88}, {w: "exceptional.", s: 132.92, e: 133.72}]},
 ];

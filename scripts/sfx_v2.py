@@ -576,15 +576,17 @@ cue(129.05, 'suck')
 cue(129.28, 'whoosh', -2)
 
 # Act 12 — outro
-cue(129.69, 'pop_lo', 2)
-cue(129.78, 'whoosh_s', -3)
-cue(130.05, 'impact', -4)
-cue(130.1, 'shimmer', 0)
-cue(w(53, 'cepat'), 'pop_g', 0)
-cue(w(54, 'tepat'), 'pop_c', 0)
-cue(w(54, 'akurat'), 'pop_d', 0)
-cue(w(54, 'akurat') + 0.05, 'sparkle', -1)
-cue(133.4, 'shimmer', -4)
+outro_t0 = w(53, 'ruber') - 0.33  # same as A12Outro
+cue(outro_t0, 'pop_lo', 2)
+cue(outro_t0 + 0.09, 'whoosh_s', -3)
+cue(outro_t0 + 0.7, 'impact', -4)
+cue(outro_t0 + 0.75, 'shimmer', 0)
+cue(w(54, 'built'), 'pop_g', -2)
+cue(w(54, 'every'), 'pop_c', -2)
+cue(w(54, 'exceptional'), 'pop_d', 0)
+cue(w(54, 'exceptional') + 0.05, 'sparkle', -1)
+cue(w(54, 'exceptional') + 0.45, 'swish', -4)
+cue(133.75, 'shimmer', -4)
 
 # ----------------------------------------------------------------------------- mixdown
 n = int(SR * DUR) + SR
