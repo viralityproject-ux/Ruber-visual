@@ -111,3 +111,11 @@ Semua 2000x889, logo di tengah dengan latar putih (perlu dibuang putihnya sebelu
 | `sosmed/kataibuku.webp` | @kataibuku.idn — Kata Ibuku | 26 | 2,115 |
 
 Total 15 akun: ±1,01 juta followers (6 akun besar >25K = 994K). Total posts: 12.899.
+
+## Audio VO v2 (perubahan mayor)
+
+| File | Isi |
+|------|-----|
+| `audio/music.mp3` | 2:14.9 — mix lengkap (musik + VO). Cocok dengan timing SRT. |
+| `audio/vocal.mp3` | 2:14.9 — stem VO. Bagian 0:15–0:45 bergeser ±0,7–0,8 dtk lebih awal dibanding `music.mp3`. |
+| `audio/vo-v2.srt` | Subtitle 55 baris untuk VO v2. |
