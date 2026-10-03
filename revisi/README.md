@@ -46,3 +46,20 @@ Nomor file = urutan kiriman. "Target" = detik yang disebut di chat.
 | 39 | Wanita berhijab blazer hitam, bg abu (varian 15) | portrait | cadangan | belum |
 | 40 | Cowok jaket suede di perpustakaan, landscape (varian 04) | landscape | cadangan | belum |
 | 41 | 3 talent varsity, layar "Empowered to Shape the Future" | landscape | cadangan | belum |
+
+## Logo klien
+
+Original di `logos/original/`, versi siap pakai (trim + transparan) di `logos/*.png`,
+dibuat dengan `scripts/key_logo.py`.
+
+| No | Klien | File | Status |
+|----|-------|------|--------|
+| 42 | Novo Club | logos/novo-club.png | tersimpan |
+| 43 | MIT REAP | logos/mit-reap.png | tersimpan |
+| 44 | ParagonCorp | logos/paragon-corp.png | tersimpan (teks hitam, perlu tile terang / versi putih di bg gelap) |
+| 45 | YBM BRILiaN | logos/ybm-brilian.png | tersimpan |
+| 46 | Indika Foundation | logos/indika-foundation.png | tersimpan |
+
+Belum masuk file-nya (terkirim di tengah proses, perlu dikirim ulang):
+Wardah Inspiring Teacher, Women's Space, Kahf, BRAVE, Points of You,
+ganara.art, VOGL Media, pijar, goto, pemimpin.id, FBN, BCA, Radyalabs.
