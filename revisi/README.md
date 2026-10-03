@@ -104,5 +104,10 @@ Semua 2000x889, logo di tengah dengan latar putih (perlu dibuang putihnya sebelu
 | `sosmed/adadirumah.webp` | @adadirumah.idn — Cerita & Tips Parenting | 19 | 5,871 |
 | `sosmed/asayangtumbuh.png` | @asayangtumbuh — Asa yang Tumbuh | 26 | 1,790 |
 | `sosmed/jalanbalik.webp` | @jalanbalik.co — Teman Hijrah | 91 | 151 |
+| `sosmed/leaderatur.webp` | @leaderatur.id — Leaderatur, Mentalitas Leader | 46 | 29K |
+| `sosmed/leaderasi.webp` | @leaderasi.id — Leaderasi, Leader Menginspirasi | 11 | 2,481 |
+| `sosmed/jurnalmasjid.webp` | @jurnalmasjid.id — Jurnal Masjid | 48 | 107 |
+| `sosmed/kerjasantuy.png` | @kerjasantuy.id — Kerja Santuy | 1,995 | 45K |
+| `sosmed/kataibuku.webp` | @kataibuku.idn — Kata Ibuku | 26 | 2,115 |
 
-Total followers 10 akun: ±928K (4 akun besar = 920K). Total posts: 10.773.
+Total 15 akun: ±1,01 juta followers (6 akun besar >25K = 994K). Total posts: 12.899.
