@@ -132,13 +132,14 @@ export const A06Speed: React.FC = () => {
   return (
     <AbsoluteFill>
       <InkBg
+        fadeFrom={51.55}
         glow={[
           [C.blue, 15, 30],
           [C.violet, 85, 75],
         ]}
         dots={false}
       />
-      <DotGrid color="rgba(255,255,255,0.12)" gap={38} opacity={0.4 + bp * 0.3} drift={t < 55 ? -60 : 0} />
+      <DotGrid color="rgba(255,255,255,0.12)" gap={38} opacity={(0.4 + bp * 0.3) * prog(t, 51.55, 0.9, ease.inCubic)} drift={t < 55 ? -60 : 0} />
 
       {/* ================= part A ================= */}
       {t < 55.1 ? (

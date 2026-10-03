@@ -5,11 +5,10 @@
   "description": "Ruber Visual - hyper dynamic motion graphic built with Remotion",
   "scripts": {
     "dev": "remotion studio",
-    "render": "remotion render RuberVisual out/ruber-visual-16x9.mp4 --crf=20 && node scripts/master.mjs out/ruber-visual-16x9.mp4 out/ruber-visual-16x9-master.mp4",
-    "render:vertical": "remotion render RuberVisualVertical out/ruber-visual-9x16.mp4 --crf=20 && node scripts/master.mjs out/ruber-visual-9x16.mp4 out/ruber-visual-9x16-master.mp4",
-    "master": "node scripts/master.mjs out/ruber-visual-16x9.mp4 out/ruber-visual-16x9-master.mp4 && node scripts/master.mjs out/ruber-visual-9x16.mp4 out/ruber-visual-9x16-master.mp4",
+    "render": "remotion render RuberVisual out/ruber-visual-v2-16x9.mp4 --crf=18 && node scripts/master.mjs out/ruber-visual-v2-16x9.mp4 out/ruber-visual-v2-16x9-master.mp4",
+    "master": "node scripts/master.mjs out/ruber-visual-v2-16x9.mp4 out/ruber-visual-v2-16x9-master.mp4",
     "still": "remotion still RuberVisual out/still.png --frame=60",
-    "sfx": "python3 scripts/gen_sfx.py",
+    "sfx": "python3 scripts/sfx_v2.py",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

@@ -96,13 +96,14 @@ export const A08Ready: React.FC = () => {
   return (
     <AbsoluteFill>
       <InkBg
+        fadeFrom={74.35}
         glow={[
           [C.blue, 20, 20],
           [C.violet, 80, 85],
         ]}
         dots={false}
       />
-      <DotGrid color="rgba(255,255,255,0.12)" gap={38} opacity={0.4 + bp * 0.3} />
+      <DotGrid color="rgba(255,255,255,0.12)" gap={38} opacity={(0.4 + bp * 0.3) * prog(t, 74.35, 0.9, ease.inCubic)} />
 
       {/* ================= part A: cepat ≠ terburu-buru ================= */}
       {t < 79.2 ? (
@@ -383,7 +384,7 @@ export const A08Ready: React.FC = () => {
       ) : null}
 
       {/* hand-off: the goal's white centre floods the frame with paper */}
-      <GrowCover t0={86.18} dur={0.47} x={GOAL[0]} y={GOAL[1]} color={C.paper} r0={34} fn={ease.inCubic} />
+      <GrowCover t0={86.18} dur={0.42} x={GOAL[0]} y={GOAL[1]} color={C.paper} r0={34} fn={ease.inCubic} />
     </AbsoluteFill>
   );
 };

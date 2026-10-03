@@ -51,12 +51,22 @@ export const Blobs: React.FC<{blobs: BlobSpec[]; blur?: number; opacity?: number
   );
 };
 
-export const PaperBg: React.FC<{blobs?: BlobSpec[]; tint?: string; blobOpacity?: number}> = ({blobs, tint = C.paper, blobOpacity = 0.9}) => (
-  <AbsoluteFill style={{background: tint}}>
-    {blobs ? <Blobs blobs={blobs} opacity={blobOpacity} /> : null}
-    <AbsoluteFill style={{background: 'radial-gradient(ellipse at 50% 50%, rgba(255,255,255,0.55) 0%, rgba(255,255,255,0) 60%)'}} />
-  </AbsoluteFill>
-);
+/** `fadeFrom`: global time at which the act starts on flat paper; blobs and light ease in from there. */
+export const PaperBg: React.FC<{blobs?: BlobSpec[]; tint?: string; blobOpacity?: number; fadeFrom?: number}> = ({
+  blobs,
+  tint = C.paper,
+  blobOpacity = 0.9,
+  fadeFrom,
+}) => {
+  const t = useT();
+  const k = fadeFrom === undefined ? 1 : Math.min(1, Math.max(0, (t - fadeFrom) / 0.9)) ** 2;
+  return (
+    <AbsoluteFill style={{background: tint}}>
+      {blobs && k > 0 ? <Blobs blobs={blobs} opacity={blobOpacity * k} /> : null}
+      <AbsoluteFill style={{background: 'radial-gradient(ellipse at 50% 50%, rgba(255,255,255,0.55) 0%, rgba(255,255,255,0) 60%)', opacity: k}} />
+    </AbsoluteFill>
+  );
+};
 
 export const DotGrid: React.FC<{color?: string; gap?: number; size?: number; opacity?: number; drift?: number}> = ({
   color = 'rgba(255,255,255,0.16)',
@@ -82,25 +92,28 @@ export const DotGrid: React.FC<{color?: string; gap?: number; size?: number; opa
   );
 };
 
-export const InkBg: React.FC<{glow?: [string, number, number][]; dots?: boolean; base?: string; children?: React.ReactNode}> = ({
+/** `fadeFrom`: global time at which the act starts on flat ink; the glows ease in from there. */
+export const InkBg: React.FC<{glow?: [string, number, number][]; dots?: boolean; base?: string; fadeFrom?: number; children?: React.ReactNode}> = ({
   glow = [
     [C.blue, 20, 85],
     [C.violet, 85, 15],
   ],
   dots = true,
   base = C.ink,
+  fadeFrom,
   children,
 }) => {
   const t = useT();
+  const k = fadeFrom === undefined ? 1 : Math.min(1, Math.max(0, (t - fadeFrom) / 0.9)) ** 2;
   return (
     <AbsoluteFill style={{background: base}}>
-      {glow.map(([c, x, y], i) => {
+      {k > 0 && glow.map(([c, x, y], i) => {
         const dx = noise2D('g' + i, t * 0.15, 0) * 6;
         const dy = noise2D('g' + i, 0, t * 0.15) * 6;
         return (
           <AbsoluteFill
             key={i}
-            style={{background: `radial-gradient(circle at ${x + dx}% ${y + dy}%, ${c}66 0%, ${c}22 25%, transparent 55%)`}}
+            style={{background: `radial-gradient(circle at ${x + dx}% ${y + dy}%, ${c}66 0%, ${c}22 25%, transparent 55%)`, opacity: k}}
           />
         );
       })}

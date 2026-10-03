@@ -93,6 +93,7 @@ export const A08cDetail: React.FC = () => {
   return (
     <AbsoluteFill>
       <PaperBg
+        fadeFrom={86.65}
         blobs={[
           {x: 90, y: 85, r: 320, color: C.blueSoft, seed: 'r1'},
           {x: 8, y: 10, r: 280, color: C.violetSoft, seed: 'r2'},

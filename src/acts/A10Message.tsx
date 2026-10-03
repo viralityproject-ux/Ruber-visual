@@ -83,6 +83,7 @@ export const A10Message: React.FC = () => {
   return (
     <AbsoluteFill>
       <PaperBg
+        fadeFrom={108.85}
         blobs={[
           {x: 12, y: 15, r: 320, color: C.violetSoft, seed: 'v1'},
           {x: 90, y: 88, r: 360, color: C.blueSoft, seed: 'v2'},
@@ -359,7 +360,7 @@ export const A10Message: React.FC = () => {
         ) : null}
       </AbsoluteFill>
       {/* everything collapses into the dark of the next idea */}
-      <GrowCover t0={121.02} dur={0.38} x={960} y={560} color={C.ink} r0={6} fn={ease.inCubic} />
+      <GrowCover t0={121.02} dur={0.33} x={960} y={560} color={C.ink} r0={6} fn={ease.inCubic} />
     </AbsoluteFill>
   );
 };

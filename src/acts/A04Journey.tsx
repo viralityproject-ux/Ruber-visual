@@ -150,6 +150,7 @@ export const A04Journey: React.FC = () => {
   return (
     <AbsoluteFill>
       <InkBg
+        fadeFrom={35.1}
         glow={[
           [C.blue, 50, 40],
           [C.violet, 85, 80],

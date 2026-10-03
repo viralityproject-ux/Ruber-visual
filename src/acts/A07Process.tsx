@@ -106,7 +106,7 @@ export const A07Process: React.FC = () => {
   const cam = camAt(t, cams);
   // final dive: the target glides to the centre of the screen while the zoom grows exponentially
   if (t > 73.66) {
-    const p = clamp01((t - 73.66) / 0.69);
+    const p = clamp01((t - 73.66) / 0.62);
     const z0 = 0.25;
     const sx0 = 960 + (TARGET[0] - (OVER[0] + 60)) * z0;
     const sy0 = 540 + (TARGET[1] - OVER[1]) * z0;
@@ -146,6 +146,7 @@ export const A07Process: React.FC = () => {
   return (
     <AbsoluteFill>
       <PaperBg
+        fadeFrom={60.2}
         blobs={[
           {x: 12, y: 80, r: 320, color: C.blueSoft, seed: 'q1'},
           {x: 88, y: 14, r: 300, color: C.violetSoft, seed: 'q2'},

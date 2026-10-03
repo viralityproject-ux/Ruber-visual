@@ -79,13 +79,14 @@ export const A11Idea: React.FC = () => {
   return (
     <AbsoluteFill>
       <InkBg
+        fadeFrom={121.4}
         glow={[
           [C.blue, 25, 30],
           [C.violet, 80, 75],
         ]}
         dots={false}
       />
-      <DotGrid color="rgba(255,255,255,0.12)" gap={38} opacity={0.35 + bp * 0.25} />
+      <DotGrid color="rgba(255,255,255,0.12)" gap={38} opacity={(0.35 + bp * 0.25) * prog(t, 121.4, 0.9, ease.inCubic)} />
       <AbsoluteFill style={{transform: `scale(${mix(1, 0.02, converge)})`, transformOrigin: `${CX}px ${CY}px`}}>
         {/* ---------------- ide: the bulb ---------------- */}
         {toGears < 1 ? (
@@ -332,7 +333,7 @@ export const A11Idea: React.FC = () => {
         ) : null}
       </AbsoluteFill>
       {/* everything meets in a single point of light, which becomes the paper of the finale */}
-      <GrowCover t0={129.3} dur={0.35} x={CX} y={CY} color={C.paper} r0={4} fn={ease.inCubic} />
+      <GrowCover t0={129.28} dur={0.3} x={CX} y={CY} color={C.paper} r0={4} fn={ease.inCubic} />
     </AbsoluteFill>
   );
 };

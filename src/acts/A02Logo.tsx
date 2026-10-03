@@ -273,13 +273,14 @@ export const A02Logo: React.FC = () => {
   return (
     <AbsoluteFill>
       <InkBg
+        fadeFrom={13.6}
         glow={[
           [C.blue, 18, 82],
           [C.violet, 84, 18],
         ]}
         dots={false}
       />
-      <DotGrid color="rgba(255,255,255,0.13)" gap={38} opacity={0.5 + bp * 0.3} />
+      <DotGrid color="rgba(255,255,255,0.13)" gap={38} opacity={(0.5 + bp * 0.3) * prog(t, 13.6, 0.9, ease.inCubic)} />
       {/* logo glow */}
       <AbsoluteFill
         style={{

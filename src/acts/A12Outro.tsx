@@ -38,7 +38,7 @@ export const A12Outro: React.FC = () => {
           {x: 15, y: 20, r: 340, color: C.blueSoft, seed: 'o1'},
           {x: 85, y: 80, r: 380, color: C.violetSoft, seed: 'o2'},
         ]}
-        blobOpacity={prog(t, 129.7, 1.2)}
+        fadeFrom={129.65}
       />
       <AbsoluteFill style={{transform: `scale(${mix(0.97, 1.02, settle)})`, transformOrigin: '960px 540px'}}>
         <div style={{position: 'absolute', left: LX, top: LY}}>

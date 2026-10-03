@@ -490,7 +490,7 @@ export const A01Hook: React.FC = () => {
       ) : null}
 
       {/* hand-off: everything collapsed into the dot, which swallows the frame */}
-      <GrowCover t0={13.22} dur={0.4} color={C.ink} r0={8} x={CX} y={CY} fn={ease.inCubic} />
+      <GrowCover t0={13.22} dur={0.33} color={C.ink} r0={8} x={CX} y={CY} fn={ease.inCubic} />
     </AbsoluteFill>
   );
 };

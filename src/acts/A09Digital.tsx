@@ -163,6 +163,7 @@ export const A09Digital: React.FC = () => {
   return (
     <AbsoluteFill>
       <InkBg
+        fadeFrom={95.3}
         glow={[
           [C.blue, 30, 35],
           [C.violet, 75, 70],
@@ -431,7 +432,7 @@ export const A09Digital: React.FC = () => {
         </AbsoluteFill>
       ) : null}
       {/* the eye opens wide: its white becomes the next act's paper */}
-      <GrowCover t0={108.32} dur={0.53} x={eye.x} y={eye.y} color={C.paper} r0={11} fn={ease.inCubic} />
+      <GrowCover t0={108.32} dur={0.48} x={eye.x} y={eye.y} color={C.paper} r0={11} fn={ease.inCubic} />
     </AbsoluteFill>
   );
 };
