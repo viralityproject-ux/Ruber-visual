@@ -63,3 +63,16 @@ dibuat dengan `scripts/key_logo.py`.
 Belum masuk file-nya (terkirim di tengah proses, perlu dikirim ulang):
 Wardah Inspiring Teacher, Women's Space, Kahf, BRAVE, Points of You,
 ganara.art, VOGL Media, pijar, goto, pemimpin.id, FBN, BCA, Radyalabs.
+
+## Logo client
+
+Semua 2000x889, logo di tengah dengan latar putih (perlu dibuang putihnya sebelum dipakai di latar gelap).
+
+| File | Client |
+|------|--------|
+| `logos/novo-club.webp` | NOVO Club |
+| `logos/mit-reap.webp` | MIT REAP (Regional Entrepreneurship Acceleration Program) |
+| `logos/paragon-corp.webp` | ParagonCorp |
+| `logos/ybm-brilian.webp` | YBM BRILiaN |
+| `logos/indika-foundation.webp` | Indika Foundation |
+| `logos/wardah.webp` | Wardah |
