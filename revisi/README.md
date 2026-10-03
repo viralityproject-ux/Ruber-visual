@@ -76,3 +76,8 @@ Semua 2000x889, logo di tengah dengan latar putih (perlu dibuang putihnya sebelu
 | `logos/ybm-brilian.webp` | YBM BRILiaN |
 | `logos/indika-foundation.webp` | Indika Foundation |
 | `logos/wardah.webp` | Wardah |
+| `logos/wardah-inspiring-teacher.webp` | Wardah Inspiring Teacher |
+| `logos/womens-space.webp` | Women's Space |
+| `logos/kahf.webp` | Kahf |
+| `logos/brave.webp` | BRAVE (Building Robust & Agile Value-Driven ERP) |
+| `logos/points-of-you.webp` | Points of You |
