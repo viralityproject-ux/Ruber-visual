@@ -119,3 +119,15 @@ Total 15 akun: ±1,01 juta followers (6 akun besar >25K = 994K). Total posts: 12
 | `audio/music.mp3` | 2:14.9 — mix lengkap (musik + VO). Cocok dengan timing SRT. |
 | `audio/vocal.mp3` | 2:14.9 — stem VO. Bagian 0:15–0:45 bergeser ±0,7–0,8 dtk lebih awal dibanding `music.mp3`. |
 | `audio/vo-v2.srt` | Subtitle 55 baris untuk VO v2. |
+
+## Logo Ruber Visual (resmi)
+
+| File | Isi |
+|------|-----|
+| `brand/ruber-visual-logo-original.png` | PNG asli 1080x1080, putih di latar hitam |
+| `brand/ruber-visual-logo-white.png` | Logo putih dengan latar transparan |
+| `brand/ruber-mark.svg` | Simbol saja, vektor (5 bagian: busur kiri, cincin "o", titik, busur kanan) |
+| `brand/ruber-wordmark.svg` | Tulisan "ruber visual", vektor |
+| `brand/ruber-lockup.svg` | Simbol + tulisan, vektor |
+
+Logo lama di video (tile "r" gradasi + "Ruber. Visual") adalah gambar ulang sementara dan akan diganti dengan logo ini.
