@@ -89,3 +89,15 @@ Semua 2000x889, logo di tengah dengan latar putih (perlu dibuang putihnya sebelu
 | `logos/fbn.webp` | FBN |
 | `logos/bca.webp` | BCA |
 | `logos/radyalabs.webp` | Radyalabs |
+
+## Akun sosmed Ruber (screenshot profil + grid 9 post)
+
+| File | Akun | Posts | Followers |
+|------|------|-------|-----------|
+| `sosmed/mental-juara.webp` | @mental_juara.id — Mental Juara Indonesia | 2,614 | 520K |
+| `sosmed/official-indeed.webp` | @official.indeed — Indeed Media | 3,028 | 129K |
+| `sosmed/scoopmedia.webp` | @scoopmedia.id — SCOOP Media | 3,059 | 95K |
+| `sosmed/sehatbugar.webp` | @sehatbugar.idn — Sahabat sehatmu | 1,866 | 176K |
+| `sosmed/semiliarkebaikan.webp` | @semiliarkebaikan — Semiliar Kebaikan | 47 | 199 |
+
+Total followers 5 akun: ±920K. Total posts: 10.614.
