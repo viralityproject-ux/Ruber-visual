@@ -86,3 +86,6 @@ Semua 2000x889, logo di tengah dengan latar putih (perlu dibuang putihnya sebelu
 | `logos/pijar.webp` | Pijar |
 | `logos/goto.webp` | GoTo |
 | `logos/pemimpin-id.webp` | Pemimpin.id |
+| `logos/fbn.webp` | FBN |
+| `logos/bca.webp` | BCA |
+| `logos/radyalabs.webp` | Radyalabs |
