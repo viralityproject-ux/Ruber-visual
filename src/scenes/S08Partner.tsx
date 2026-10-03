@@ -8,27 +8,28 @@ import {Center, Media, Pill} from '../components/UI';
 import {useLayout, useT} from '../lib/scene';
 import {bump, ease, mix, n2, prog, spr} from '../lib/anim';
 
-type Shot = {src: string; x: number; y: number; r: number; w: number; pos?: string};
+// ar = height / width of the card (portrait 1.25, landscape 0.72)
+type Shot = {src: string; x: number; y: number; r: number; w: number; ar?: number; pos?: string};
 
 const LAND: Shot[] = [
-  {src: 'photos/street-jump.jpg', x: 11, y: 26, r: -9, w: 290},
-  {src: 'photos/fashion-girl-pink.jpg', x: 28, y: 13, r: 5, w: 240},
-  {src: 'photos/product-kahf-red.jpg', x: 73, y: 12, r: -4, w: 330},
-  {src: 'photos/fashion-trio.jpg', x: 90, y: 28, r: 8, w: 270},
-  {src: 'photos/fashion-hijab-orange.jpg', x: 9, y: 76, r: 6, w: 260},
-  {src: 'photos/campaign-kahf-jalan-yang-kupilih.jpg', x: 27, y: 88, r: -6, w: 250},
-  {src: 'photos/street-duo-02.jpg', x: 72, y: 88, r: 5, w: 290},
-  {src: 'photos/fashion-girl-phones.jpg', x: 91, y: 74, r: -8, w: 250},
+  {src: 'photos/collage-library-portrait.jpg', x: 10, y: 27, r: -9, w: 270, pos: '55% 40%'},
+  {src: 'photos/collage-varsity-hallway.jpg', x: 30, y: 12, r: 5, w: 380, ar: 0.72, pos: '40% 45%'},
+  {src: 'photos/collage-perfume-product.jpg', x: 71, y: 12, r: -4, w: 390, ar: 0.72, pos: '55% 45%'},
+  {src: 'photos/collage-ponytail-studio.jpg', x: 90, y: 28, r: 8, w: 260, pos: '50% 30%'},
+  {src: 'photos/collage-studio-blue-portrait.jpg', x: 9, y: 75, r: 6, w: 260, pos: '50% 35%'},
+  {src: 'photos/collage-event-stage.jpg', x: 29, y: 88, r: -6, w: 390, ar: 0.72, pos: '50% 55%'},
+  {src: 'photos/collage-group-blue.jpg', x: 71, y: 88, r: 5, w: 390, ar: 0.72, pos: '50% 40%'},
+  {src: 'photos/collage-corporate-portrait.jpg', x: 91, y: 74, r: -8, w: 250, pos: '50% 30%'},
 ];
 const PORT: Shot[] = [
-  {src: 'photos/street-jump.jpg', x: 18, y: 12, r: -9, w: 300},
-  {src: 'photos/product-kahf-red.jpg', x: 72, y: 9, r: 5, w: 380},
-  {src: 'photos/fashion-girl-pink.jpg', x: 86, y: 25, r: 8, w: 250},
-  {src: 'photos/fashion-trio.jpg', x: 14, y: 30, r: -4, w: 250},
-  {src: 'photos/fashion-hijab-orange.jpg', x: 16, y: 72, r: 6, w: 270},
-  {src: 'photos/campaign-kahf-jalan-yang-kupilih.jpg', x: 84, y: 74, r: -6, w: 270},
-  {src: 'photos/street-duo-02.jpg', x: 30, y: 90, r: 5, w: 300},
-  {src: 'photos/fashion-girl-phones.jpg', x: 74, y: 91, r: -8, w: 250},
+  {src: 'photos/collage-varsity-hallway.jpg', x: 24, y: 10, r: -7, w: 430, ar: 0.72, pos: '40% 45%'},
+  {src: 'photos/collage-perfume-product.jpg', x: 76, y: 9, r: 5, w: 420, ar: 0.72, pos: '55% 45%'},
+  {src: 'photos/collage-ponytail-studio.jpg', x: 86, y: 26, r: 8, w: 240, pos: '50% 30%'},
+  {src: 'photos/collage-library-portrait.jpg', x: 14, y: 29, r: -4, w: 240, pos: '55% 40%'},
+  {src: 'photos/collage-studio-blue-portrait.jpg', x: 15, y: 72, r: 6, w: 250, pos: '50% 35%'},
+  {src: 'photos/collage-corporate-portrait.jpg', x: 85, y: 73, r: -6, w: 250, pos: '50% 30%'},
+  {src: 'photos/collage-event-stage.jpg', x: 26, y: 90, r: 5, w: 430, ar: 0.72, pos: '50% 55%'},
+  {src: 'photos/collage-group-blue.jpg', x: 75, y: 91, r: -7, w: 420, ar: 0.72, pos: '50% 40%'},
 ];
 
 // "Ruber Visual hadir sebagai creative production partner"
@@ -68,9 +69,9 @@ export const S08Partner: React.FC = () => {
             style={{
               position: 'absolute',
               left: x - cw / 2,
-              top: y - cw * 0.625,
+              top: y - (cw * (s.ar ?? 1.25)) / 2,
               width: cw,
-              height: cw * 1.25,
+              height: cw * (s.ar ?? 1.25),
               borderRadius: 22 * u,
               overflow: 'hidden',
               transform: `scale(${sc}) rotate(${s.r + n2('pr' + i, t * 0.3) * 3}deg) perspective(1200px) rotateY(${mix(dx > 0 ? -40 : 40, 0, p)}deg)`,
@@ -80,7 +81,7 @@ export const S08Partner: React.FC = () => {
               filter: p < 0.6 ? `blur(${(0.6 - p) * 20}px)` : undefined,
             }}
           >
-            <Media src={s.src} />
+            <Media src={s.src} pos={s.pos} />
           </div>
         );
       })}
