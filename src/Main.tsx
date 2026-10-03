@@ -13,6 +13,9 @@ import {A07Process} from './acts/A07Process';
 import {A08Ready} from './acts/A08Ready';
 import {A08cDetail} from './acts/A08cDetail';
 import {A09Digital} from './acts/A09Digital';
+import {A10Message} from './acts/A10Message';
+import {A11Idea} from './acts/A11Idea';
+import {A12Outro} from './acts/A12Outro';
 
 export type MainProps = {
   sfx?: boolean;
@@ -54,6 +57,15 @@ export const Main: React.FC<MainProps> = ({music = true, subtitles = true}) => (
     </Scene>
     <Scene name="09 Digital" from={95.3} to={108.85}>
       <A09Digital />
+    </Scene>
+    <Scene name="10 Message" from={108.85} to={121.4}>
+      <A10Message />
+    </Scene>
+    <Scene name="11 Idea" from={121.4} to={129.65}>
+      <A11Idea />
+    </Scene>
+    <Scene name="12 Outro" from={129.65} to={134.92}>
+      <A12Outro />
     </Scene>
     {subtitles ? <Subtitles /> : null}
     <Grain opacity={0.05} />

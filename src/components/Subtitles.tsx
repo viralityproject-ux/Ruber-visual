@@ -4,6 +4,9 @@ import {C, F} from '../theme';
 import {useT} from '../lib/scene';
 import {clamp01, ease, mix} from '../lib/anim';
 
+/** Subtitles stop where the outro starts. */
+export const OUTRO_FROM = 129.6;
+
 /** Background tone timeline (seconds): which acts are paper and which are ink. */
 export const TONES: [number, 'light' | 'dark'][] = [
   [0, 'light'],
@@ -38,6 +41,8 @@ const lerpColor = (a: number[], b: number[], p: number) => `rgba(${a.map((x, i) 
 /** Karaoke-style captions of the full VO, adapting to the background tone. */
 export const Subtitles: React.FC = () => {
   const t = useT();
+  // the outro is logo + tagline only: the tagline already carries the words
+  if (t >= OUTRO_FROM) return null;
   const line = VO2.find((l) => t >= l.start - 0.08 && t <= l.end + 0.32);
   if (!line) return null;
   const inP = ease.outCubic(clamp01((t - (line.start - 0.08)) / 0.18));
