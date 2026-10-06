@@ -54,7 +54,7 @@ const INDUSTRIES: [string, number, number, string][] = [
 // ---------------- part C: three different briefs ----------------
 const BRIEFS = [
   {word: 'kebutuhan', icon: 'target', main: 'photos/paragon-discussion.jpg', inset: 'photos/paragon-empowered.jpg', x: 470},
-  {word: 'karakter', icon: 'sparkle', main: 'photos/hijab-blazer-black.jpg', inset: 'photos/p41-stage-confetti.jpg', x: 960},
+  {word: 'karakter', icon: 'sparkle', main: 'photos/hijab-blazer-black.jpg', inset: 'photos/p41-stage-confetti.jpg', x: 960, pos: '50% 6%'},
   {word: 'tantangan', icon: 'bolt', main: 'photos/bts-director-pointing.jpg', inset: 'photos/bts-bed-scene-overhead.jpg', x: 1450},
 ];
 const BC_W = 420;
@@ -516,6 +516,7 @@ export const A04Journey: React.FC = () => {
                         width: '100%',
                         height: '100%',
                         objectFit: 'cover',
+                        objectPosition: 'pos' in b ? b.pos : '50% 50%',
                         filter: i === 1 ? `grayscale(${diff}) contrast(${1 + diff * 0.25})` : i === 2 ? `saturate(${1 + diff * 0.6}) hue-rotate(${diff * -18}deg)` : undefined,
                       }}
                     />

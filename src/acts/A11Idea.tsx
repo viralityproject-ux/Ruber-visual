@@ -211,7 +211,7 @@ export const A11Idea: React.FC = () => {
             <div style={{position: 'absolute', left: CX - 140, top: CY - 287, transform: `scale(${phoneIn * mix(0.4, 1, toPhone)}) rotate(${mix(-12, 0, phoneIn)}deg)`}}>
               <PhoneFrame w={280}>
                 <At t={kemudian}>
-                  <Media src="videos/reel-street-fashion-bts.mp4" trim={4} />
+                  <Media src="videos/reel-closing.mp4" />
                 </At>
                 <div style={{position: 'absolute', left: 16, top: 44, display: 'flex', alignItems: 'center', gap: 8, padding: '5px 12px', borderRadius: 999, background: published > 0 ? GRAD : 'rgba(7,8,22,0.6)', color: '#fff', fontFamily: F.display, fontWeight: 800, fontSize: 15}}>
                   {published > 0 ? (

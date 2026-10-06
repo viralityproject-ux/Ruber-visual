@@ -17,15 +17,15 @@ const CW = 300;
 const CH = 533;
 
 const STORIES = [
-  'photos/fashion-hijab-glasses.jpg',
-  'photos/street-jump.jpg',
-  'photos/fashion-girl-pink.jpg',
-  'photos/street-duo-01.jpg',
-  'photos/fashion-hijab-orange.jpg',
-  'photos/fashion-trio.jpg',
-  'photos/street-girl-selfie.jpg',
-  'photos/fashion-duo-wide.jpg',
-  'photos/fashion-group-barrier.jpg',
+  'photos/collage-ponytail-studio.jpg',
+  'photos/collage-studio-blue-portrait.jpg',
+  'photos/hijab-blazer-navy.jpg',
+  'photos/collage-corporate-portrait.jpg',
+  'photos/varsity-hallway-vertical.jpg',
+  'photos/collage-library-portrait.jpg',
+  'photos/portrait-cream-grey.jpg',
+  'photos/hijab-blazer-black.jpg',
+  'photos/varsity-backpack.jpg',
 ];
 const RING1 = [
   'photos/street-girl-portrait.jpg',
